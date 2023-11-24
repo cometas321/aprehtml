@@ -1,0 +1,227 @@
+<!--de esta forma podemos poner comentarios-->
+<!DOCTYPE html> <!--este es un nodoo-->
+<!--el html seria como una declaracion de inicio de nuestro proyecto en html y donde va a estar todo el contenido de nuestro cdigo-->
+<!--el html se dive en 2 que seria head la raiz y body que seria el cuerpo-->
+<html> 
+    <!--el head es un elemento donde vamos a poner meta datos sitio que no se vva a reenderisar que archivos cargar, mejor dicho el head no sirve para mas informacion a nuestra pagina-->
+    <head>
+        <meta charset="utf-8"><!--la codificacion que vamos a utilisar-->
+        <meta name="viewport" content="width=devece-width"><!--para adaptar o ajustar la pantalla-->
+
+        <title>aprendiendo hmtl, estudiente entusiasmado en aprender desarrollo web</title> <!--es un titulo que se va mostrando-->
+
+        <meta name="robots" content="index,follow">
+        <meta name="theme-color" content="#09f">
+        
+        <link rel="icon" type="image/jpg" href="images/yo.jpg"> <!--Es una eiqueta que muestra una imagen enel buscardor-->
+
+        <meta name="description" content="portafoio de rene, ya va en medio de todo 
+        una carrera de estadistica e informatica">
+
+        <!--otra etiqueta que tambien puede ser es el open graph -->
+        <meta property="og:title" content="portafolio de estuante entusiamado">
+
+        <link rel="altenate" href="htts://renerolando/en"
+        hreflang="es-ES">
+        <link rel="canonical" href="https://hjola/edev">
+        <style>
+            body {
+                background: rgb(244, 250, 136);
+            }
+        </style>
+
+    </head>
+ 
+    <!--dentro de body va todo el codigo que vamos a renderisar-->
+    <body>
+
+        <header>
+            <iframe style="width: 100%;aspect-ratio: 16 / 9;"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/jKdt-BnTTR0?si=dCc1GQDHdXqRHhvv" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </header>
+
+        
+        <header>
+            <h1>portfolio de rene:)</h1>
+        <!-- el nav es para la barra de navegacion ya sea fuera de la pagina o dentro-->
+        <!--para las navegaciones internad debemos indicar a donde va a ir-->
+        <!--para navegaciones externas debemos hacer lo siguiente con el target=_blank para que abra en una nueva pestaña-->
+        <nav>
+            <a href="#experiencia">experiencia</a>
+            <a href="#proyectos">proyectos</a>
+            <a 
+            href="https://www.youtube.com/watch?v=3nYLTiY5skU&t=4498s"
+            target="_blank"
+            rel="noreferrer">youtube</a>
+        </nav>
+        </header>
+
+        <video poster="images/yo.jpg" controls src="images/Caribeños de Guadalupe - Vivo Por Tu Amor (Letra).mp4"></video>
+
+        <main>
+            <p>soy principiante aqui en html y me gusta aprender para realizar aplicaciones web soy <strong> de la universidad nacional del altiplano </strong> unos compañeros guay</p>        
+            <h2 id="experiencia">experiencia</h2>
+            <ul>
+                <li>primer semestre guay</li>
+                <li>segundo semestre guay</li> 
+                <li>tercer semestre guay</li>
+                <li>cuarto semestre guay</li>
+                <li>quiento semestre guay</li>
+            </ul>
+
+            <img 
+            width="400"
+            height="400"
+            src="images/yo.jpg" 
+            title="imagen adaptado" 
+            alt="imagen deun causa frente a la pantalla">
+            
+
+            <h2 id="proyectos"> proyectos realizados</h2>
+
+            <!--el aside es para hacer un contenido mas tipo anexo es como para dar contexto -->
+            <aside>
+                <header>
+                    <h3>mis tecnologias favoritas</h3>
+                </header>
+                <!--ul = para hacer puntos en cambio el ol es para hacer una lista enumerada y li son las palabras que estaran enumeradas o con puntos -->
+                <ol reversed start="10">  
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li value="5">JavaScript</sli>
+                    <li>Node.js</li>
+                    </ol>
+            </aside>
+            
+            <button>
+                haz clic aqui
+            </button>
+
+            <section>
+                <!--con article podemos agrupar con imformacion propia contenida que si llevamos esa article a otro sitio sigue teniendo sentido-->
+                <article>
+                    <!--un header es un encabezado, es como el h1, h2, h3, h4, por cada articulo existe un header -->
+                    <header>
+                        <h4>la pagina de tesla</h4>
+                        <img style="width:100%; aspect-ratio: 638/316"
+                        loading="lazy" 
+                        src="images/tesla.jpg" 
+                        alt="captura de pantalla de la pagina de tesla">
+                    </header>
+                    <p>
+                        elon musk me llamo e hice esta pagina desde cero
+                    </p>
+                    <!--footer es el pie de pagina, o es como una informacion mas secundaria asta podemos utilizar small que lo hace mas pequeño que puede ser para dar informacion que no sea tan importante como el resto-->
+                    <footer>
+                        <small> utilizadas: HTML, CSS JavaScript</small>
+                    </footer>
+                </article>
+            </section>
+
+            <section>
+                <h2>preguntas frecuentes</h2>
+
+                <details >
+                    <summary>¿que estudios tienes?</summary>
+                    <p>estudie en la universidad nacional del altiplano ingenieria estadistica e informatica</p>
+                </details>
+                <details>
+                    <summary>¿cuales son tus hobbies?</summary>
+                    <p>me encanta la programacion y la fotografia</p>
+                </details>
+                <details>
+                    <summary>¿cuales son tus pasatiempos?</summary>
+                    <p>me paso estudianodo y viendo peliculas</p>
+                </details>
+            </section>
+        
+
+            <section>
+                <h2>Formulario de contacto</h2>
+
+                <form method="post" action="/">
+
+                    <fieldset>
+                        <legend>informacion personal</legend>
+                        <!--label es pay para etiquetar y que nos lleve al input-->
+                        <div>
+                            <label>Nombre:
+                                <input 
+                                    type="text" 
+                                    name="name"
+                                    placeholder="rene rolando jejejejeje"
+                                    required>
+                            </label>
+                        </div>
+                        <label>Email:
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="email@de.com"
+                                required>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>informacion adicional</legend>
+                        <div>
+                            <label>telefono;
+                            <input 
+                                type="tel" name="tel" placeholder="999999999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>otros</legend>
+                        <div>
+                            <label for="why">porque me quieres contactar?</label>
+                            <select>
+                                <option value="1">trabajo</option>
+                                <option value="2">duda</option>
+                                <option value="3">mas informacion</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="terms">¿aceptas los terminos?</label>
+                            <input type="checkbox" name="terms" id="terms" required>
+                        </div>
+                        <div>
+                            <datalist id="languages">
+                                <option value="JavaScript"></option>
+                                <option value="python"></option>
+                                <option value="java"></option>
+                                <option value="c++"></option>
+                            </datalist>
+                            <label>
+                                con que lenguaje quieres quieres que te ayude
+                                <input list="languages" name="lenguajes">
+                            </label>
+                        </div>
+
+                    </fieldset>
+
+
+
+                    <input type="submit" value="envar contacto">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            copyright 2023 - el portafolio mas bello del mundo
+
+            <a href="mailto:pendejo@mail.com">enviame un correo</a>
+            <a href="tel:+51 999999999">llamar por telefono</a>
+            <a href="whatsapp://send ?text= hola rene">escribir por whatsapp</a>
+
+            
+        </footer>
+    
+    </body>
+</html>
